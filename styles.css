@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+header{
+    /*display: flex;
+    background: rgb(20,20,20);
+background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(44,44,46,1) 58%, rgba(91,93,93,1) 100%);
+    align-items: center;
+    justify-content: center;*/
+    display: flex;
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(44, 44, 46, 1) 58%, rgba(91, 93, 93, 1) 100%);
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+
+    display: flex;
+    gap: 3em;
+}
+
+body {
+    /*background: rgb(197, 191, 178);*/
+    margin: 0;
+    padding: 0;
+    background: rgb(239, 237, 231);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu {
+    flex: 1; 
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu li {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var (--i) );
+    transform: rotate(0deg) translateX(100px);
+}
+
+.menu.active li {
+    transform: rotate(calc(360deg / 4 * var(--i))) translateX(-83px);
+}
+
+.menu li a {
+    
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2em;
+    color: black;
+}
+.content {
+    flex: 1;
+}
+
+.toggle {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #eee7c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+
+.menu.active .toggle {
+    transform: rotate(310deg);
+}
+
+.logo{
+    width: 30%;
+    height: 5%;
+}
+
+#IconUno{
+    background-color: #D4AF37;
+}
+#IconDos{
+    background-color: #a68d31;
+}
+#IconTres{
+    background-color:  #836d24;
+}
+#IconCuatro{
+    background-color:#584a16;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+    background: rgb(20,20,20);
+    background-color: rgba(44,44,46,1);
+    color: rgb(182, 182, 166);
+    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 0.06em;
+    padding-right: 1em;
+    padding-bottom: 0.06em;
+    padding-left: 0.06em;
+}
+
+.redes {
+    border-radius: 0%;
+    height: 2em;
+    width: 203m;
+
+}
+
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    .menu li {
+        width: auto;
+        justify-content: center;
+       
+    } 
+    .toggle{
+        width: auto;
+        justify-content: center;
+        
+    }
+
+  }
+
+
+ 
+  

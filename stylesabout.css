@@ -1,0 +1,132 @@
+a {
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(239, 237, 231);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    background: linear-gradient(90deg, rgb(42, 41, 41) 0%, rgb(52, 50, 50) 58%, rgba(91, 93, 93, 1) 100%);
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.06em;
+    padding-right: 1em;
+    padding-bottom: 0.06em;
+    padding-left: 0.06em;
+}
+header nav ul  {
+    display: flex;
+    gap: 3em;    
+}
+
+header nav ul a {
+    color: #D4AF37;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+.logo{
+    width: 20%;
+    height: 5%;
+}
+
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 6%;
+}
+
+
+.sobremi {
+    width: 14em;
+    height: 20em;
+    background: #ffffff;
+    padding:10px;
+    -webkit-box-shadow: 1px 1px 5px #000000;
+    -moz-box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
+
+    
+}
+
+.acerca-de{
+    padding:10px;
+    margin: 2px;
+}
+.informacionBasica{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding:0.5em;
+    margin: 5em;
+    
+    
+    
+}
+
+#imagenacercaUno, #imagenacercaDos{
+   /* width: 7em;
+    height: 7em;
+    background: #ffffff;
+    padding:10px;
+    -webkit-box-shadow: 1px 1px 5px #000000;
+    -moz-box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
+    margin:  auto; /* Centra horizontalmente 
+    display: flex;
+    justify-content: center;  Centra horizontalmente en el contenedor */
+  
+
+    width: 7em;
+    height: 7em;
+    background: #ffffff;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 5px #000000;
+    -moz-box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
+    margin: 0 auto; /* Centra horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en el contenedor */
+    align-items: center; /* Centra verticalmente en el contenedor */
+    
+}
+
+.informacion{
+
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+    background: rgb(20,20,20);
+    background-color: rgba(44,44,46,1);
+    color: rgb(182, 182, 166);
+    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 0.06em;
+    padding-right: 1em;
+    padding-bottom: 0.06em;
+    padding-left: 0.06em;
+}
+
+.redes {
+    border-radius: 0%;
+    height: 2em;
+    width: 2em;
+
+}
