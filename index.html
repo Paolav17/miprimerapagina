@@ -4,59 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paola Vargas</title>
+    <link rel="icon" href="images/inicio.ico">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,800&family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+        
+    
 </head>
-<body>
+
     <header>
-        <img src="images/logo.png" alt="Logo Paola Vargas" class="logo">
-        
+            
+            <img src="images/logo.png" alt="Logo Paola Vargas" class="logo"> 
+            
     </header>   
-    <div class="content">
-        <div class="menu">
-            <div class="toggle"><ion-icon name="add-circle-outline"></ion-icon></div> 
-            <li style="--i:0;">
-                <a href="about.html" id="IconUno" class="icon"><ion-icon name="person-circle-outline"></ion-icon></a>
-            </li>
-            <li style="--i:1;">
-                <a href="#"id="IconDos"class="icon"><ion-icon name="color-palette-outline"></ion-icon></a>
-            </li>
-            <li style="--i:2;">
-                <a href="#" id="IconTres"class="icon"><ion-icon name="color-wand-outline"></ion-icon></a>
-            </li>
-            <li style="--i:3;">
-                <a href="contacto.html" id="IconCuatro"class="icon"><ion-icon name="mail-outline"></ion-icon></a>
-            </li>
-        </div>
-    </div>
-    <footer>
+    <body> 
         
-           <h7>© 2023 Paola Vargas. All Rights Reserved.</h7>
-        <nav class="foot">
-            <a href="https://www.instagram.com/pao.vargas.m/?hl=es" title="dirección instagram" target="_blank">
-                <img src="images/instagram.png" alt="Logo instagran" class="redes">
-            </a>
-            <a href="https://www.linkedin.com/in/jessica-paola-vargas/" title="dirección instagram" target="_blank">
-                <img src="images/linkedin.png" alt="Logo linkedin" class="redes">
-            </a>
-            <a href="https://wa.me/573178874067" title="dirección instagram" target="_blank">
-                <img src="images/whatsapp.png" alt="Logo whatsapp" class="redes">
-            </a>
-        </nav>    
+        <div class="content">
+            <div class="responsivo">
+                <ul>
+                    <a href="about.html"><li>Sobre mi</li></a>
+                    <a href="portafolio.html"><li>Portafolio</li></a>
+                    <a href="servicios.html"><li>Servicios</li></a>
+                    <a href="contacto.html"><li>Contacto</li></a>
+                </ul>
 
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            </div>
+            <div class="menu">
+                <div class="toggle"><ion-icon name="add-circle-outline"></ion-icon></div> 
+                <li style="--i:0;">
+                    <a href="about.html" id="IconUno" class="icon"><ion-icon name="person-circle-outline"></ion-icon></a>
+                </li>
+                <li style="--i:1;">
+                    <a href="#"id="IconDos"class="icon"><ion-icon name="color-palette-outline"></ion-icon></a>
+                </li>
+                <li style="--i:2;">
+                    <a href="#" id="IconTres"class="icon"><ion-icon name="color-wand-outline"></ion-icon></a>
+                </li>
+                <li style="--i:3;">
+                    <a href="contacto.html" id="IconCuatro"class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+                </li>
+            </div>
+        </div>
+        <footer>
+            
+            <h7>© 2023 Paola Vargas. All Rights Reserved.</h7>
+            <nav class="foot">
+                <a href="https://www.instagram.com/pao.vargas.m/?hl=es" title="dirección instagram" target="_blank">
+                    <img src="images/instagram.png" alt="Logo instagran" class="redes">
+                </a>
+                <a href="https://www.linkedin.com/in/jessica-paola-vargas/" title="dirección instagram" target="_blank">
+                    <img src="images/linkedin.png" alt="Logo linkedin" class="redes">
+                </a>
+                <a href="https://wa.me/573178874067" title="dirección instagram" target="_blank">
+                    <img src="images/whatsapp.png" alt="Logo whatsapp" class="redes">
+                </a>
+            </nav>    
 
-<script>
-    let toggle = document.querySelector ('.toggle');
-    let menu = document.querySelector ('.menu');
-    toggle.onclick = function (){
-        menu.classList.toggle ('active')
-    }
-</script>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let toggle = document.querySelector ('.toggle');
+        let menu = document.querySelector ('.menu');
+        toggle.onclick = function (){
+            menu.classList.toggle ('active')
+        }
+    </script>
 
 
 </body>

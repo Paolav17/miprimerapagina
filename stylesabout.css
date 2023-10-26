@@ -23,6 +23,17 @@ header{
     padding-bottom: 0.06em;
     padding-left: 0.06em;
 }
+
+#check{
+    display: block;
+}
+
+
+.checkbtn{
+    font-size: 20px;
+    margin-left: auto;
+    cursor: pointer;   
+}
 header nav ul  {
     display: flex;
     gap: 3em;    
