@@ -76,10 +76,18 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    font-size: 2em;
+    font-size: 3em;
     color: black;
     opacity: 0.8;
 }
+
+h4 {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans', sans-serif;
+    color: #836d24;
+}
+
+
 
 
 .content {
@@ -197,6 +205,7 @@ footer {
         color: #000; /* Color del texto */
         font-family: 'EB Garamond', serif;
         font-family: 'Noto Sans', sans-serif;
+        
     }
 
   }
